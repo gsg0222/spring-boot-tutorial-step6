@@ -1,13 +1,12 @@
 package blog.tsuchiya.tutorial.step6.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.validation.constraints.Size;
-
-import com.sun.istack.NotNull;
-
+// v2.5.6から3.1.0にバージョン変更した際、パッケージがjavaxからjakartaに変更になりました
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Size;
 import lombok.Data;
 
 /**

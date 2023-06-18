@@ -20,7 +20,7 @@ public class MainController {
 	 * 役割分担を意識している。
 	 */
 	private final MainService service;
-	@RequestMapping
+	@RequestMapping("/")
 	public String index(@RequestParam(required = false) String title, Model model) {
 		// タイトルが入力されたらデータベースに保存する
 		if(!Objects.isNull(title) && !title.isBlank()) {
